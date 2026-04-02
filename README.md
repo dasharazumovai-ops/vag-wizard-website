@@ -1,2 +1,0 @@
-# vag-wizard-website
-
