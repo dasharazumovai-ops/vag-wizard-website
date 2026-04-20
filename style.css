@@ -74,6 +74,27 @@ a {
   width: auto;
   display: block;
   background: transparent;
+  margin-bottom: -10px; /* adjust until it looks balanced */
+}
+
+.book-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.map-link:hover {
+  transform: scale(1.1);
+  background: rgba(213, 208, 208, 0.08);
 }
 
 nav {
