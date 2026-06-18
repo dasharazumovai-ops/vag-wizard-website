@@ -6,6 +6,7 @@
   <title>VAG Wizard Ltd</title>
   <meta name="description" content="VAG specialist garage in Nicosia for diagnostics, servicing and DSG gearbox repairs for Volkswagen, Audi, SEAT and Skoda.">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- <div class="top-bar">
@@ -16,10 +17,14 @@
 </div> -->
   <header class="navbar">
     <a href="#top" class="logo"><img src="assets/logo.png" alt="VAG Wizard Ltd logo"></a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <nav>
       <a href="#services">Services</a>
       <a href="#story">Our Story</a>
       <a href="#gallery">Gallery</a>
+      <a href="#shop">Shop</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="book-group">
@@ -41,13 +46,18 @@
       <p>Diagnostics, servicing and DSG gearbox repairs for Volkswagen, Audi, SEAT and Skoda.</p>
       <div class="hero-actions">
         <a class="main-btn" href="tel:+35722524363">Call to Book</a>
-        <a class="secondary-btn" href="tel:+35722524363">Call Now</a>
       </div>
     </div>
   </section>
 
   <section class="trust">
-    <div class="trust-item"><h3>★★★★★</h3><p>5.0 Google Rating</p></div>
+    <div class="trust-item">
+      <h3 class="stars" style="--rating:4.8">
+        <span class="stars-bg" aria-hidden="true">★★★★★</span><span class="stars-fg" aria-hidden="true">★★★★★</span>
+        <span class="sr-only">4.8 out of 5 stars</span>
+      </h3>
+      <p>4.8 Google Rating</p>
+    </div>
     <div class="trust-item"><h3>Since 2016</h3><p>VAG specialist workshop</p></div>
     <div class="trust-item"><h3>Volkswagen Group</h3><p>Audi • VW • SEAT • Skoda</p></div>
   </section>
@@ -104,6 +114,18 @@
     </div>
   </section>
 
+  <section id="shop" class="shop section">
+    <div class="section-head">
+      <p class="eyebrow">New</p>
+      <h2>VAG Wizard Shop</h2>
+      <p>Our sister site for genuine and quality-checked parts and accessories for Volkswagen, Audi, SEAT and Skoda.</p>
+    </div>
+    <div class="shop-cta">
+      <!-- TODO: replace href="#" with the live VAG Wizard Shop URL once it is published -->
+      <a class="main-btn" href="#" rel="noopener">Visit the Shop</a>
+    </div>
+  </section>
+
   <section id="contact" class="contact section">
     <div class="section-head">
       <p class="eyebrow">Contact</p>
@@ -114,7 +136,6 @@
     <p>Monday to Friday: 8:00–13:00 / 14:00–17:00</p>
     <div class="hero-actions center">
       <a class="main-btn" href="tel:+35796850825">Call to Book</a>
-      <a class="secondary-btn" href="tel:+35796850825">Call Workshop</a>
     </div>
   </section>
 
@@ -122,5 +143,7 @@
     <img src="assets/logo.png" alt="VAG Wizard Ltd logo">
     <p>© VAG Wizard Ltd</p>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </body>
 </html>
