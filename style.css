@@ -55,7 +55,7 @@ a {
 
 .navbar {
   position: sticky;
-  top: 30px;
+  top: 0;
   z-index: 20;
 
   display: flex;
