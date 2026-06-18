@@ -12,6 +12,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Reserve space for the sticky navbar so anchor links (Shop, Services, etc.)
+     don't land with their heading hidden underneath it. */
+  scroll-padding-top: 130px;
 }
 
 body {
@@ -526,6 +529,12 @@ footer img {
   margin: 0 auto 10px;
 }
 
+footer .credit {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
 @media (max-width: 900px) {
   .trust,
   .service-grid,
@@ -543,6 +552,10 @@ footer img {
    menu, but keep the logo and the call-to-book button always visible
    since that's the action that matters most on a phone. */
 @media (max-width: 860px) {
+  html {
+    scroll-padding-top: 90px;
+  }
+
   .navbar {
     padding: 10px 16px;
     flex-wrap: nowrap;
@@ -632,6 +645,10 @@ footer img {
 
 /* Smaller phones: tighten typography and spacing further. */
 @media (max-width: 480px) {
+  html {
+    scroll-padding-top: 78px;
+  }
+
   .logo img {
     height: 46px;
   }
